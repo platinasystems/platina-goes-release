@@ -44,7 +44,7 @@ pipeline {
 		to: email_to
 	}
 	failure {
-	    cleanWs()
+	    //cleanWs()
 	    mail body: "PLATINA-GOES-RELEASE build error: ${env.BUILD_URL}",
 		from: email_from,
 		replyTo: email_reply_to,
