@@ -33,7 +33,6 @@
 [submodule "fe1"]
 	path = fe1
 	url = https://github.com/platinasystems/fe1
-	branch = release-build-test
 [submodule "platina-linux-kernel"]
 	path = platina-linux-kernel
 	url = https://github.com/platinasystems/platina-linux-kernel
