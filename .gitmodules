@@ -1,44 +1,56 @@
 [submodule "flashrom"]
 	path = flashrom
 	url = https://github.com/platinasystems/flashrom
+	branch = goes-2.0
 [submodule "ethtool"]
 	path = ethtool
 	url = https://github.com/platinasystems/ethtool
+	branch = goes-2.0
 [submodule "golang-1.14"]
 	path = golang-1.14
 	url = https://github.com/platinasystems/golang-1.14
-	branch = golang-1.14
+	branch = goes-2.0
 [submodule "goes-build"]
 	path = goes-build
 	url = https://github.com/platinasystems/goes-build
+	branch = goes-2.0
 [submodule "linux"]
 	path = linux
 	url = https://github.com/platinasystems/linux
-	branch = v4.18.20-platina
+	branch = goes-2.0
 [submodule "u-boot"]
 	path = u-boot
 	url = https://github.com/platinasystems/u-boot
+	branch = goes-2.0
 [submodule "coreboot"]
 	path = coreboot
 	url = https://github.com/platinasystems/coreboot
+	branch = goes-2.0
 [submodule "goes-boot"]
 	path = goes-boot
 	url = https://github.com/platinasystems/goes-boot
+	branch = goes-2.0
 [submodule "platina-secrets"]
 	path = platina-secrets
 	url = https://github.com/platinasystems/platina-secrets
+	branch = goes-2.0
 [submodule "goes-bmc"]
 	path = goes-bmc
 	url = https://github.com/platinasystems/goes-bmc
+	branch = goes-2.0
 [submodule "fe1"]
 	path = fe1
 	url = https://github.com/platinasystems/fe1
+	branch = goes-2.0
 [submodule "platina-linux-kernel"]
 	path = platina-linux-kernel
 	url = https://github.com/platinasystems/platina-linux-kernel
+	branch = goes-2.0
 [submodule "platina-mk1-ttys"]
 	path = platina-mk1-ttys
 	url = https://github.com/platinasystems/platina-mk1-ttys
+	branch = goes-2.0
 [submodule "platina-mk1-release"]
 	path = platina-mk1-release
 	url = https://github.com/platinasystems/platina-mk1-release
+	branch = goes-2.0
