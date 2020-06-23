@@ -13,6 +13,11 @@ pipeline {
 	HOME = "$WORKSPACE"
     }
     stages {
+	stage('Pre-clean') {
+	    steps {
+		sh 'make clean'
+	    }
+	}
 	stage('Checkout') {
 	    steps {
 		echo "Running build #${env.BUILD_ID} on ${env.JENKINS_URL} GOPATH ${GOPATH}"
