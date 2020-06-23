@@ -45,7 +45,7 @@ pipeline {
 	    mail body: "PLATINA-GOES-RELEASE ${env.BRANCH_NAME} build ok: ${env.BUILD_URL}\n",
 		from: email_from,
 		replyTo: email_reply_to,
-		subject: 'PLATINA-GOES-RELEASE ${env.BRANCH_NAME} build ok',
+		subject: "PLATINA-GOES-RELEASE ${env.BRANCH_NAME} build ok",
 		to: email_to
 	}
 	failure {
@@ -53,7 +53,7 @@ pipeline {
 	    mail body: "PLATINA-GOES-RELEASE ${env.BRANCH_NAME} build error: ${env.BUILD_URL}",
 		from: email_from,
 		replyTo: email_reply_to,
-		subject: 'PLATINA-GOES-RELEASE ${env.BRANCH_NAME} BUILD FAILED',
+		subject: "PLATINA-GOES-RELEASE ${env.BRANCH_NAME} BUILD FAILED",
 		to: email_to
 	}
     }
