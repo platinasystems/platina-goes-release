@@ -16,7 +16,7 @@ goes-boot.deb: goes-build.deb
 	cd $* && git reset --hard && git clean -d -x -f && goes-build -x -z -v platina-mk1-bmc.zip && cp platina-mk1-bmc.zip ..
 
 clean: FORCE
-	rm -f *.deb *.zip *.change *.buildinfo
+	rm -f *.deb *.zip *.changes *.buildinfo
 
 FORCE:
 
