@@ -42,18 +42,18 @@ pipeline {
     post {
 	success {
 	    archiveArtifacts artifacts: '*.deb,*.zip,*.changes,*.buildinfo'
-	    mail body: "PLATINA-GOES-RELEASE build ok: ${env.BUILD_URL}\n",
+	    mail body: "PLATINA-GOES-RELEASE ${env.BRANCH_NAME} build ok: ${env.BUILD_URL}\n",
 		from: email_from,
 		replyTo: email_reply_to,
-		subject: 'PLATINA-GOES-RELEASE build ok',
+		subject: 'PLATINA-GOES-RELEASE ${env.BRANCH_NAME} build ok',
 		to: email_to
 	}
 	failure {
 	    //cleanWs()
-	    mail body: "PLATINA-GOES-RELEASE build error: ${env.BUILD_URL}",
+	    mail body: "PLATINA-GOES-RELEASE ${env.BRANCH_NAME} build error: ${env.BUILD_URL}",
 		from: email_from,
 		replyTo: email_reply_to,
-		subject: 'PLATINA-GOES-RELEASE BUILD FAILED',
+		subject: 'PLATINA-GOES-RELEASE ${env.BRANCH_NAME} BUILD FAILED',
 		to: email_to
 	}
     }
