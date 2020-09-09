@@ -41,7 +41,7 @@ pipeline {
 
     post {
 	success {
-	    archiveArtifacts artifacts: '*.deb,*.zip,*.changes,*.buildinfo'
+	    archiveArtifacts artifacts: '*.deb,*.zip,*.changes,*.buildinfo,*.cpio.xz'
 	    mail body: "PLATINA-GOES-RELEASE ${env.BRANCH_NAME} build ok: ${env.BUILD_URL}\n",
 		from: email_from,
 		replyTo: email_reply_to,
