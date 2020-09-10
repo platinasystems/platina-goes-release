@@ -14,7 +14,7 @@
 [submodule "linux"]
 	path = linux
 	url = https://github.com/platinasystems/linux
-	branch = v4.18.20-platina
+	branch = platina-4.18.y
 [submodule "u-boot"]
 	path = u-boot
 	url = https://github.com/platinasystems/u-boot
