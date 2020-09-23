@@ -42,3 +42,6 @@
 [submodule "platina-mk1-release"]
 	path = platina-mk1-release
 	url = https://github.com/platinasystems/platina-mk1-release
+[submodule "goes"]
+	path = goes
+	url = https://github.com/platinasystems/goes
