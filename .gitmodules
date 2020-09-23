@@ -33,6 +33,7 @@
 [submodule "fe1"]
 	path = fe1
 	url = https://github.com/platinasystems/fe1
+	branch = v2
 [submodule "platina-linux-kernel"]
 	path = platina-linux-kernel
 	url = https://github.com/platinasystems/platina-linux-kernel
