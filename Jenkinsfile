@@ -22,6 +22,7 @@ pipeline {
 	    steps {
 		echo "Running build #${env.BUILD_ID} on ${env.JENKINS_URL} GOPATH ${GOPATH}"
 		sshagent(credentials: ['570701f7-c819-4db2-bd31-a0da8a452b41']) {
+		    sh 'rm -rf .gnupg ; ln -s ../../.gnupg'
 		    sh 'git config --global url.git@github.com:.insteadOf "https://github.com/"'
 		    sh 'git config --global user.email "jenkins@platinasystems.com"'
 		    sh 'git config --global user.name "Jenkins"'
