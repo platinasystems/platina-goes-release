@@ -28,7 +28,7 @@ pipeline {
 		    sh 'git config --global user.name "Jenkins"'
 		    sh 'git config --global user.signingkey 3718F263B7F1AEF2'
 		    sh 'git submodule init'
-		    sh 'git submodule update -r --remote'
+		    sh 'git submodule update -r'
 		}
 	    }
 	}
