@@ -4,10 +4,6 @@
 [submodule "ethtool"]
 	path = ethtool
 	url = https://github.com/platinasystems/ethtool
-[submodule "golang-1.14"]
-	path = golang-1.14
-	url = https://github.com/platinasystems/golang-1.14
-	branch = golang-1.14
 [submodule "goes-build"]
 	path = goes-build
 	url = https://github.com/platinasystems/goes-build
@@ -46,3 +42,6 @@
 [submodule "goes"]
 	path = goes
 	url = https://github.com/platinasystems/goes
+[submodule "golang-1.15"]
+	path = golang-1.15
+	url = https://github.com/platinasystems/golang-1.15
