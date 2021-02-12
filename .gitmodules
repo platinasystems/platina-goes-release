@@ -45,3 +45,6 @@
 [submodule "golang-1.15"]
 	path = golang-1.15
 	url = https://github.com/platinasystems/golang-1.15
+[submodule "libgpiod"]
+	path = libgpiod
+	url = https://github.com/platinasystems/libgpiod
