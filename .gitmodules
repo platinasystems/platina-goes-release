@@ -46,3 +46,6 @@
 [submodule "goes"]
 	path = goes
 	url = https://github.com/platinasystems/goes
+[submodule "libgpiod"]
+	path = libgpiod
+	url = https://github.com/platinasystems/libgpiod
