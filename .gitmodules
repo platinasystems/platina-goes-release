@@ -48,3 +48,9 @@
 [submodule "libgpiod"]
 	path = libgpiod
 	url = https://github.com/platinasystems/libgpiod
+[submodule "makedumpfile"]
+	path = makedumpfile
+	url = https://github.com/platinasystems/makedumpfile
+[submodule "kexec-tools"]
+	path = kexec-tools
+	url = https://github.com/platinasystems/kexec-tools
