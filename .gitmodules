@@ -54,3 +54,6 @@
 [submodule "kexec-tools"]
 	path = kexec-tools
 	url = https://github.com/platinasystems/kexec-tools
+[submodule "lm-sensors"]
+	path = lm-sensors
+	url = https://github.com/platinasystems/lm-sensors.git
