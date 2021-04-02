@@ -57,3 +57,6 @@
 [submodule "lm-sensors"]
 	path = lm-sensors
 	url = https://github.com/platinasystems/lm-sensors.git
+[submodule "crash"]
+	path = crash
+	url = https://github.com/platinasystems/crash.git
