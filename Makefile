@@ -1,7 +1,7 @@
 all:	golang-1.15.gbp ethtool.gbp flashrom.gbp goes-build.deb goes-boot.deb \
 	fe1.deb goes-bmc.zip platina-linux-kernel.deb platina-mk1-ttys.deb \
 	platina-mk1-release.deb goes.deb libgpiod.gbp makedumpfile.gbp \
-	kexec-tools.gbp lm-sensors.gbp crash.gbp
+	kexec-tools.gbp lm-sensors.gbp crash.gbp xeth.deb
 
 goes-build.deb: golang-1.15.gbp
 
