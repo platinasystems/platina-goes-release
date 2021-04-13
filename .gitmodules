@@ -60,3 +60,6 @@
 [submodule "crash"]
 	path = crash
 	url = https://github.com/platinasystems/crash.git
+[submodule "xeth"]
+	path = xeth
+	url = https://github.com/platinasystems/xeth.git
