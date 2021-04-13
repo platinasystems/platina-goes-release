@@ -63,3 +63,6 @@
 [submodule "xeth"]
 	path = xeth
 	url = https://github.com/platinasystems/xeth.git
+[submodule "dkms"]
+	path = dkms
+	url = https://github.com/platinasystems/dkms.git
