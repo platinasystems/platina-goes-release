@@ -1,0 +1,35 @@
+#!/bin/bash
+MAKEBINPKG="goes-build fe1 platina-linux-kernel platina-mk1-ttys platina-mk1-release goes"
+MAKEGBPPKG="golang-1.15 ethtool flashrom makedumpfile lm-sensors crash xeth"
+MAKEKERNELPKG="coreboot goes-boot goes-bmc linux u-boot"
+
+declare -A BRANCHES
+
+BRANCHES["golang-1.15"]="golang-1.15"
+BRANCHES["fe1"]="v2"
+BRANCHES["linux"]="platina-5.4.y"
+BRANCHES["u-boot"]="goes-2.0"
+BRANCHES["xeth"]="main"
+
+function getbranch()
+{
+    b="${BRANCHES[$1]}"
+    [ -n "$b" ] || b="master"
+    echo "$b"
+}
+
+for repo in $MAKEBINPKG; do
+  rm -rf $repo
+  git clone --depth 1 -b `getbranch $repo` https://github.com/platinasystems/$repo
+done
+
+for repo in $MAKEGBPPKG; do
+  rm -rf $repo
+  git clone --depth 1 --no-single-branch -b `getbranch $repo` https://github.com/platinasystems/$repo
+done
+
+for repo in $MAKEGBPPKG $MAKEKERNELPKG; do
+  rm -rf $repo
+  git clone -b `getbranch $repo` https://github.com/platinasystems/$repo
+done
+
