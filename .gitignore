@@ -1,10 +1,12 @@
+*~
 *.build
 *.buildinfo
 *.changes
 *.deb
 *.dsc
-*.tar.gz
-*.tar.xz
+*.gz
+*.udeb
+*.xz
 *.zip
 /coreboot
 /crash
