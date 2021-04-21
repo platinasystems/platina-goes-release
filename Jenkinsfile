@@ -7,10 +7,16 @@ import groovy.transform.Field
 @Field String email_reply_to = 'no-reply@platinasystems.com'
 
 pipeline {
-    agent any
+    agent {
+	docker {
+	    image 'platina-goes-build:2.2'
+	}
+    }
     environment {
 	GOPATH = "$WORKSPACE/go-pkg"
 	HOME = "$WORKSPACE"
+	GIT_SSH_COMMAND = "ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
+	
     }
     stages {
 	stage('Pre-clean') {
@@ -27,6 +33,10 @@ pipeline {
 		    sh 'git config --global user.email "jenkins@platinasystems.com"'
 		    sh 'git config --global user.name "Jenkins"'
 		    sh 'git config --global user.signingkey 3718F263B7F1AEF2'
+		    sh 'pwd'
+		    sh 'env'
+		    sh 'ls -l'
+		    sh 'ssh-add -l'
 		    sh './clone-github'
 		}
 	    }
