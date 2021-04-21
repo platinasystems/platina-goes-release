@@ -28,7 +28,7 @@ for repo in $MAKEGBPPKG; do
   git clone --depth 1 --no-single-branch -b `getbranch $repo` https://github.com/platinasystems/$repo
 done
 
-for repo in $MAKEGBPPKG $MAKEKERNELPKG; do
+for repo in $MAKEKERNELPKG; do
   rm -rf $repo
   git clone -b `getbranch $repo` https://github.com/platinasystems/$repo
 done
