@@ -37,15 +37,15 @@ RUN echo "deb http://ftp.debian.org/debian buster-backports main" >> /etc/apt/so
 	    u-boot-tools
 
 RUN cd && \
-    git clone --depth=1 --no-single-branch https://github.com/platinasystems/golang-1.15 -b golang-1.15 && \
-    cd golang-1.15 && \
+    git clone --depth=1 --no-single-branch https://github.com/platinasystems/golang-1.16 -b golang-1.16 && \
+    cd golang-1.16 && \
     gbp buildpackage --git-ignore-branch -us -uc && \
     cd .. && \
-    dpkg -i golang-1.15*.deb && \
+    dpkg -i golang-1.16*.deb && \
     rm /usr/bin/go && \
     ln -s ../lib/go/bin/go /usr/bin/go && \
     rm /usr/lib/go && \
-    ln -s go-1.15 /usr/lib/go
+    ln -s go-1.16 /usr/lib/go
 
 RUN cd && \
     git clone --depth=1 --no-single-branch https://github.com/platinasystems/goes-build -b master && \

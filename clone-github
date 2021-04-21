@@ -1,11 +1,11 @@
 #!/bin/bash
 MAKEBINPKG="goes-build fe1 platina-linux-kernel platina-mk1-ttys platina-mk1-release goes"
-MAKEGBPPKG="golang-1.15 ethtool flashrom makedumpfile lm-sensors crash xeth onie"
+MAKEGBPPKG="golang-1.16 ethtool flashrom makedumpfile lm-sensors crash xeth onie"
 MAKEKERNELPKG="coreboot goes-boot goes-bmc linux u-boot"
 
 declare -A BRANCHES
 
-BRANCHES["golang-1.15"]="golang-1.15"
+BRANCHES["golang-1.16"]="golang-1.16"
 BRANCHES["fe1"]="v2"
 BRANCHES["linux"]="platina-5.4.y"
 BRANCHES["onie"]="main"
