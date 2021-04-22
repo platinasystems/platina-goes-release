@@ -19,6 +19,7 @@
 /goes-boot
 /goes-build
 /golang-1.15
+/golang-1.16
 /linux
 /lm-sensors
 /makedumpfile

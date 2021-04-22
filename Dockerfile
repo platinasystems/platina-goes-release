@@ -10,8 +10,10 @@ RUN echo "deb http://ftp.debian.org/debian buster-backports main" >> /etc/apt/so
     	    build-essential \
 	    cdbs \
 	    cpio \
+	    debhelper/buster-backports \
 	    dh-systemd \
 	    dkms \
+	    dwz/buster-backports \
     	    flex \
     	    gcc-arm-linux-gnueabi \
 	    gawk \
