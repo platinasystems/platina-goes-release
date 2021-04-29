@@ -1,7 +1,7 @@
 FROM debian:10 as build-env
 
 RUN echo "deb http://ftp.debian.org/debian buster-backports main" >> /etc/apt/sources.list  && \
-    apt-get update && apt-get upgrade && \
+    apt-get update -y && apt-get upgrade -y && \
     apt-get install -y \
 	    bash-completion \
     	    bc \
