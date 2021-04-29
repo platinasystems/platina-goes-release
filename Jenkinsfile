@@ -8,8 +8,8 @@ import groovy.transform.Field
 
 pipeline {
     agent {
-	docker {
-	    image 'platina-goes-build:2.2'
+	dockerfile {
+	    filename 'Dockerfile'
 	}
     }
     environment {
