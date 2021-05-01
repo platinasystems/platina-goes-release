@@ -1,6 +1,6 @@
 #!/bin/bash
 MAKEBINPKG="goes-build fe1 platina-linux-kernel platina-mk1-ttys platina-mk1-release goes"
-MAKEGBPPKG="golang-1.16 ethtool flashrom makedumpfile lm-sensors crash xeth onie"
+MAKEGBPPKG="golang-1.16 ethtool flashrom makedumpfile lm-sensors crash xeth onie kexec-tools"
 MAKEKERNELPKG="coreboot goes-boot goes-bmc linux u-boot"
 
 declare -A BRANCHES
