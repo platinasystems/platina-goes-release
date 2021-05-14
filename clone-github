@@ -7,6 +7,7 @@ declare -A BRANCHES
 
 BRANCHES["golang-1.16"]="golang-1.16"
 BRANCHES["fe1"]="master"
+BRANCHES["i2cipc"]="main"
 BRANCHES["linux"]="platina-5.10.y"
 BRANCHES["onie"]="main"
 BRANCHES["u-boot"]="goes-2.0"
