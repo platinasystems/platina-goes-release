@@ -60,3 +60,6 @@
 [submodule "crash"]
 	path = crash
 	url = https://github.com/platinasystems/crash.git
+[submodule "platina-repos"]
+	path = platina-repos
+	url = https://github.com/platinasystems/platina-repos.git
