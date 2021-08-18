@@ -7,7 +7,7 @@ import groovy.transform.Field
 @Field String email_reply_to = 'no-reply@platinasystems.com'
 
 pipeline {
-    agent any
+    agent {label 'master'}
     environment {
 	GOPATH = "$WORKSPACE/go-pkg"
 	HOME = "$WORKSPACE"
