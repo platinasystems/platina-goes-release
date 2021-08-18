@@ -1,6 +1,6 @@
 #!/bin/bash
 MAKEBINPKG="goes-build fe1 platina-linux-kernel platina-mk1-ttys platina-mk1-release goes"
-MAKEGBPPKG="golang-1.16 ethtool flashrom makedumpfile lm-sensors crash xeth onie kexec-tools i2cipc"
+MAKEGBPPKG="golang-1.16 ethtool flashrom makedumpfile lm-sensors crash xeth onie kexec-tools i2cipc platina-repos"
 MAKEKERNELPKG="coreboot goes-boot goes-bmc linux u-boot"
 
 declare -A BRANCHES
@@ -10,6 +10,7 @@ BRANCHES["fe1"]="master"
 BRANCHES["i2cipc"]="main"
 BRANCHES["linux"]="platina-5.10.y"
 BRANCHES["onie"]="main"
+BRANCHES["platina-repos"]="main"
 BRANCHES["u-boot"]="goes-2.0"
 BRANCHES["xeth"]="main"
 
