@@ -32,8 +32,8 @@ RUN echo "deb http://ftp.debian.org/debian buster-backports main" >> /etc/apt/so
 	    libsnappy-dev \
 	    libusb-1.0.0-dev \
 	    libusb-dev \
-	    linux-headers-amd64/buster-backports \
-	    linux-image-amd64/buster-backports \
+	    linux-headers-5.10.0-0.bpo.8-amd64 \
+	    linux-image-5.10.0-0.bpo.4-amd64 \
 	    quilt \
 	    rsync \
 	    u-boot-tools
